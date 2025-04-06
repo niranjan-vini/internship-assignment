@@ -7,7 +7,7 @@ from django.db import transaction
 
 # step 1: checking if django signals execute synchronously
 @receiver(post_save.send(User))
-def user_signals(sender,instance,**kwargs):
+def user_signal(sender,instance,**kwargs):
     print("Signals received for:",instance.usrename)
     time.sleep(5)  #simulate delay
     print("signals execution completed.")
