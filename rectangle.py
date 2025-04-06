@@ -8,7 +8,7 @@ class Rectangle:
         yield {"length": self.length}
         yield {"width": self.width}
 
-# Example usage
+
 if __name__ == "__main__":
     rect = Rectangle(10, 5)
     for attribute in rect:
